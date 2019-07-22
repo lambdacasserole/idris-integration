@@ -22,7 +22,7 @@ y_equals_x_squared : Double -> Double
 y_equals_x_squared x = x * x
 ```
 
-Now, loads `scratch.idr` by invoking `idris scratch.idr` and try the following:
+Now, load `scratch.idr` by invoking `idris scratch.idr` and try the following:
 
 ```idris
 > :module Integration.Riemann
@@ -35,4 +35,5 @@ Now, loads `scratch.idr` by invoking `idris scratch.idr` and try the following:
 ```
 
 ## Future Work
-It would be nice to define the trapezoidal rule separately and then prove that it is equivalent to the average of the right and left Riemann sums. Unfortunately I'm currently not sure where to start with this, whether or not the definitions in this library are amenable to this, or whether it is even possible right now.
+* I'd like to add the midpoint rule in here at some point.
+* It would be nice to define the trapezoidal rule separately and then prove that it is equivalent to the average of the right and left Riemann sums. Unfortunately I'm currently not sure where to start with this, whether or not the definitions in this library are amenable to this, or whether it is even possible right now.
